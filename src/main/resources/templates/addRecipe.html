@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Recipe</title>
+</head>
+<body>
+    <form th:action = "@{/addRecipe/{id}(id=${id})}" method="POST">
+        <h3> Do you have a new recipe?</h3>
+        <h3>Share it with us!</h3>
+        <input th:type="text" value="didn't write a recipe" name="textContent">
+        <button type="submit"> Add recipe</button>
+    </form>
+    <form action = "/profile" method="GET">
+        <button type="submit">My profile</button>
+    </form>
+
+</body>
+</html>
